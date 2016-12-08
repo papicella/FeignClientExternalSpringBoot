@@ -21,7 +21,7 @@ public class CountryRest
     @Autowired
     private CountryServiceClient countryServiceClient;
 
-    @RequestMapping(value = "/countries", method = RequestMethod.GET)
+    @RequestMapping(value = "/countries", method = RequestMethod.GET, produces = "application/json")
     public String allCountries()
     {
         String countries = countryServiceClient.getCountries();

@@ -1,5 +1,5 @@
 feign:
-  histrix:
+  hystrix:
     enabled: false
 
 hystrix:

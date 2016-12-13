@@ -2,14 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Spring Boot Typehead Demo</title>
+    <title>Spring Boot Typeahead Demo</title>
 
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <!-- Latest compiled and minified CSS -->
@@ -17,6 +14,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
     <script  type="text/javascript" th:src="@{js/typeahead.bundle.js}"></script>
 
@@ -28,7 +27,7 @@
                 datumTokenizer: Bloodhound.tokenizers.whitespace,
                 queryTokenizer: Bloodhound.tokenizers.whitespace,
                 // The url points to a json file that contains an array of country names
-                prefetch: '../data/countries.json'
+                prefetch: './country_names'
             });
 
             // Initializing the typeahead with remote dataset
@@ -129,7 +128,7 @@
 
         <div class="space-left">
             <div class="page-header">
-                <h1>Spring Boot <small>Typehead Demo</small></h1>
+                <h1>Spring Boot <small>Typeahead Demo</small></h1>
             </div>
         </div>
 

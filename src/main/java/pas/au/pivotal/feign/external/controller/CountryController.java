@@ -17,9 +17,4 @@ public class CountryController
         return "main";
     }
 
-    @RequestMapping(value = "/demo", method = RequestMethod.GET)
-    public String demo()
-    {
-        return "demo";
-    }
 }

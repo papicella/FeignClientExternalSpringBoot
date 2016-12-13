@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @FeignClient(name = "country-service-client", url = "http://country.io")
 public interface CountryServiceClient {
 
-    @RequestMapping(method = RequestMethod.GET, value = "/names.json")
+    @RequestMapping(method = RequestMethod.GET, value = "/names.json", produces = "application/json")
     String getCountries();
 }

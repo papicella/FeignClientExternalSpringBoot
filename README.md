@@ -20,7 +20,7 @@ $ got clone https://github.com/papicella/FeignClientExternalSpringBoot.git
 - package it up
 
 ```
-$mvn package
+$ mvn package
 ```
 
 - cf push using a manifest as follows
